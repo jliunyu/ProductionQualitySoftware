@@ -1,0 +1,9 @@
+Please enter your code review in this file as plain text
+and make sure to include it when you commit your project.
+
+1. For line 148 in the Entry class, the author used an builder method because there are many constructor parameters. The builder method can chcek its invariants on its paraments. It's also easier for add or reduce paraments.
+2. For line 23 in the AddressBook, the author used arraylist as the data structure to store the data. It's a good way to choose array list because it's easy for add, remove, search and so on. Array list is really suitable for request of the home work.
+3. The author use private constructor in both Entry class and AddressBook class. It's a good way to make the classes a singleton.
+4. The author use a static factory method in the XMLReaderWriter class. Static factory method could make sure that new object will not create each time the method is called.
+5. In the three classes, the author only import the class that are needed. This is a good way. 
+6. The author use long as the type of phonenumber for line 16 in the Entry class. But when it read a xml, the phone number may include "-", "(", ")" and so on. If so, long type variable can not store these kind of data. So I think String is better than long for the phone number.

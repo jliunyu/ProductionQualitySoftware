@@ -1,0 +1,6 @@
+1. There is a Test class and it's really important to make sure the correctness of the implement of the API.
+2. In the class of Stopwatch, it's a good way to override the hashCode method. The author override the equals method so it's really important to override the hashCode method. The author also use numbers as parameters to write the hash function and this makes sure that different Object has different hash value.
+3. when read or write, the author use synchronized to make the thread safty.
+4. Did not write docs for equals, toString and hashCode
+5. It's really good to only import classes that are needed
+6. Only use synchronized method so deadlock will be avoid.
